@@ -1,0 +1,12 @@
+{
+  "name": "demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "api": "uvicorn main:app --reload --port ${API_PORT:-8700}"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="api-base" content="" />
+    <title>Pagination demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <select id="mode">
+      <option value="offset">Offset</option>
+      <option value="cursor">Cursor</option>
+    </select>
+    <select id="pageSize">
+      <option value="5">5</option>
+      <option value="10" selected>10</option>
+      <option value="20">20</option>
+    </select>
+    <button type="button" id="insertBtn">Insert row</button>
+    <p id="meta"></p>
+    <div id="scrollWrap" class="scroll-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>category</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div id="pager"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
